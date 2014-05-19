@@ -1,0 +1,16 @@
+{% include head.html %}
+{% include header.html %}
+<div class="content" role="main">
+    <div class='container'>
+        <div class='row'>
+            <div class='col-lg-8 col-md-8 col-sm-12 col-xs-12 blog-main'>
+                {{ content }}
+            </div>
+            <div class='col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 blog-sidebar'>
+                {% include sidebar.html %}
+            </div>
+        </div>
+    </div>
+</div>
+{% include foot.html %}
+{% include footer.html %}

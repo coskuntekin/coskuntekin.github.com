@@ -1,0 +1,8 @@
+name: coskuntekin.com
+description: "I write about front-end development stuff."
+exclude: ['README.md', 'sass/']
+paginate: 10
+markdown: redcarpet
+permalink: pretty
+pygments: true
+
