@@ -4,52 +4,19 @@ layout: default
 page-class: home
 ---
 
-{% for post in site.posts %}
-    <div class='blog-post'>
-        <h1 class='blog-post-title'>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </h1>
-        <small class='blog-post-meta color-gray'>
-            {{ post.date | date_to_string }}
-        </small>
-    </div>
-{% endfor %}
-<div class='blog-pager offset-top-30'>
-    <ul class='pager'>
-        {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <li>
-            <a href="/">
-                &larr; Older
+<main class="container" role="main">
+    <section class="g-wide--full">
+      <ul class="articles-list">
+        {% for post in site.posts %}
+          <li class="articles-list__item">
+            <a class="articles-list__link" href="{{ post.url }}">
+              {{ post.title }}
+              <small class="articles-list__date">
+                {{ post.date | date_to_string }}
+              </small>
             </a>
-        </li>
-        {% else %}
-        <li>
-            <a href="/page{{ paginator.previous_page }}">
-                &larr; Older
-            </a>
-        </li>
-        {% endif %}
-        {% else %}
-        <li class='previous disabled'>
-            <a href="/">
-                &larr; Older
-            </a>
-        </li>
-        {% endif %}
-
-        {% if paginator.next_page %}
-        <li>
-            <a href="/page{{ paginator.next_page }}">
-                Newer &rarr;
-            </a>
-        </li>
-        {% else %}
-        <li class='next disabled'>
-            <a href="/">
-                Newer &rarr;
-            </a>
-        </li>
-        {% endif %}
-    </ul>
-</div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+</main>

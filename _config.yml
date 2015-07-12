@@ -1,8 +1,36 @@
-name: coskuntekin.com
-description: "I write about front-end development stuff."
+# Syntax highlighting
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+tagline:             I write about front-end development stuff.
+url:                 http://coskuntekin.github.io
 exclude: ['README.md', 'sass/']
 paginate: 10
 markdown: redcarpet
-permalink: pretty
-pygments: true
 
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _scss
+  style:            :compressed
+  output_style: compact
+  sass_options:
+    unix_newlines: true
+
+#Compass active [$gem install jekyll-compass] [https://github.com/mscharley/jekyll-compass]
+gems:
+- jekyll-compass
+
+#Jekyll Sitemap
+sitemap:
+  lastmod:
+  priority: 0.5
+  changefreq: monthly
+  exclude: 'no'

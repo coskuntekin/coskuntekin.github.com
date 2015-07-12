@@ -1,0 +1,45 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+a {
+  @include transition (color, 1s, linear, .28s)
+}
+
+a:hover,
+a:focus {
+  @include transition (color, 1s, linear, .28s)
+}
+
+@include keyframes(breath) {
+  0% {
+    @include transform(scale(1));
+  }
+  20% {
+    @include transform(scale(1.2));
+  }
+  40% {
+    @include transform(scale(1));
+  }
+  60% {
+    @include transform(scale(1.2));
+  }
+  80% {
+    @include transform(scale(1));
+  }
+  100% {
+    @include transform(scale(1.2));
+  }
+}
+
+.breath {
+  position: relative;
+  top: -2px;
+  color: #e8806a;
+  @include transform-origin(0 0);
+  @include animation(breath 4s linear 1s infinite alternate);
+}
+

@@ -2,29 +2,46 @@
 <html class="no-js" lang="tr">
 <head>
     <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="Coskun Tekin" name="author">
-    <meta content="I write stuff about front-end development" name="description">
+    <meta name="description" content="I write stuff about front-end development">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
     <meta name="revisit-after" content="1 days">
+
+    <title>
+        {% if page.title == "Home" %}
+            {{ site.title }} {{ site.tagline }}
+        {% else %}
+            {{ page.title }} {{ site.title }}
+        {% endif %}
+    </title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="coskuntekin's web site">
+    <link rel="icon" sizes="192x192" href="{{ site.baseurl }}/images/touch/chrome-touch-icon-192x192.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="coskuntekin's web site">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/touch/apple-touch-icon.png">
+
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <meta name="theme-color" content="#3372DF">
 
     <link rel="dns-prefetch" href="//www.google-analytics.com">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.coskuntekin.com/feeds/feed.xml" />
 
-    <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
-    <link href="/assets/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin-ext" media="screen" rel="stylesheet" type="text/css" />
+    <link href="{{ site.baseurl }}/images/favicon.ico" rel="icon" type="image/ico" />
 
-    <script src="/assets/javascripts/vendor/modernizr-2.8.0.min.js"></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+    <link href="{{ site.baseurl }}/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}atom.xml">
 
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <title>
-        {{ page.title }}
-    </title>
 </head>
 <body class="{{ page.page-class }}">
