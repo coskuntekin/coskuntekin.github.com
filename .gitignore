@@ -10,8 +10,11 @@
 # Ignore the build directory
 /build
 
-# Ignore Sass' cache
+# Ignore Sass cache
 /.sass-cache
+
+# Ignore Compass cache
+/.compass
 
 # Ignore all cache
 .cache
