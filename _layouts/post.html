@@ -4,8 +4,9 @@ page-class: single
 ---
 
 {% include head.html %}
-{% include header.html %}
-<main class="container" role="main">
+<div class="container">
+    {% include header.html %}
+    <div class="main">
     <section class="g-wide--full">
         <article>
             <h2>{{ page.title }}</h2>
@@ -15,5 +16,6 @@ page-class: single
             {{ content }}
         </article>
     </section>
-</main>
-{% include footer.html %}
+    </div>
+    {% include footer.html %}
+</div>

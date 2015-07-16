@@ -1,0 +1,22 @@
+/* TEAM */
+
+    Front-End Developer: Coskun Tekin
+    Twitter: @coskuntekin
+
+/* THANKS */
+
+    Ruby
+    Middleman
+    HAML
+    Sass
+    Compass
+    Modernizr
+    jQuery
+    GIT
+
+/* SITE */
+
+    Last Update: 2015/07/16
+    Standards: Ruby, HTML5, CSS3
+    IDE: RubyMine
+    Platform: Middleman - Ruby

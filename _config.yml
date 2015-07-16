@@ -24,10 +24,6 @@ sass:
   sass_options:
     unix_newlines: true
 
-#Compass active [$gem install jekyll-compass] [https://github.com/mscharley/jekyll-compass]
-gems:
-- jekyll-compass
-
 #Jekyll Sitemap
 sitemap:
   lastmod:

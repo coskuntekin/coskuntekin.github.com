@@ -4,19 +4,18 @@ layout: default
 page-class: home
 ---
 
-<main class="container" role="main">
-    <section class="g-wide--full">
-      <ul class="articles-list">
-        {% for post in site.posts %}
-          <li class="articles-list__item">
-            <a class="articles-list__link" href="{{ post.url }}">
-              {{ post.title }}
-              <small class="articles-list__date">
-                {{ post.date | date_to_string }}
-              </small>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-</main>
+<div class="main">
+  <div class="article-list">
+    {% for post in site.posts %}
+      <div class="article-list__item">
+
+        <a class="article-list__link" href="{{ post.url }}">
+          {{ post.title }}
+          <small class="article-list__date">
+            {{ post.date | date_to_string }}
+          </small>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
