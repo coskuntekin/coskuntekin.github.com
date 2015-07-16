@@ -7,15 +7,11 @@ page-class: single
 <div class="container">
     {% include header.html %}
     <div class="main">
-    <section class="g-wide--full">
-        <article>
-            <h2>{{ page.title }}</h2>
-            <small class="articles-list__date">
-                {{ page.date | date: "%-d %b %Y" }}
-            </small>
-            {{ content }}
-        </article>
-    </section>
+        <h2>{{ page.title }}</h2>
+        <small class="articles-list__date">
+            {{ page.date | date: "%-d %b %Y" }}
+        </small>
+        {{ content }}
     </div>
     {% include footer.html %}
 </div>

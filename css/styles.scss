@@ -77,15 +77,11 @@ h6{
 a{
   font-weight: inherit;
   line-height: inherit;
-  color: #222;
+  color: #383535;
   text-decoration: none;
   -moz-transition: color, 1s, linear, 0.28s;
-  -o-transition: color, 1s, linear, 0.28s;
   -webkit-transition: color, 1s, linear, 0.28s;
   transition: color, 1s, linear, 0.28s;
-  &:visited{
-    color: lighten(#222,50%);
-  }
   &:hover{
     color: #b5a88c;
   }
@@ -94,11 +90,10 @@ a{
 .container{
   max-width: 700px;
   margin: 20px auto;
-  padding: 40px;
+  padding: 30px;
 }
 
 .header{
-  text-align: right;
   &::after{
     content: "";
     display: block;
@@ -110,13 +105,13 @@ a{
 }
 
 .page-title{
-  float: left;
   & > a{
     color: #474747;
   }
 }
 
 /*ul*/.nav{
+  padding-left: 0;
   list-style: none;
   & > li {
     display: inline-block;
@@ -144,19 +139,6 @@ a{
   width: 100%;
   height: auto;
   padding: 10px 0;
-  &:hover{
-    padding-left: 10px;
-    &::before{
-      position: absolute;
-      top: 8px;
-      left: 0;
-      content: "";
-      display: block;
-      width: 1px;
-      height: 30px;
-      background-color: #b5a88c;
-    }
-  }
 }
 
 .article-list__date{
@@ -272,9 +254,6 @@ a{
 }
 
 .breath {
-  position: relative;
-  top: -2px;
-  color: #b5a88c;
   -moz-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
@@ -283,8 +262,6 @@ a{
   -webkit-animation: breath 4s linear 1s infinite alternate;
   animation: breath 4s linear 1s infinite alternate;
 }
-
-
 
 /* ==========================================================================
    Helper classes
@@ -410,6 +387,34 @@ textarea[contenteditable] {
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media (min-width: 544px){
+
+  .header{
+    text-align: right;
+  }
+
+  .page-title{
+    float: left;
+  }
+
+  .article-list__link{
+    &:hover{
+      padding-left: 10px;
+      &::before{
+        position: absolute;
+        top: 8px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 30px;
+        background-color: #b5a88c;
+      }
+    }
+  }
+
+}
 
 @media only screen and (min-width: 800px) {
   /* Style adjustments for viewports that meet the condition */
