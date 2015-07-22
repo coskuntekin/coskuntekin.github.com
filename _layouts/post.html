@@ -4,16 +4,19 @@ page-class: single
 ---
 
 {% include head.html %}
-{% include header.html %}
-<main class="container" role="main">
-    <section class="g-wide--full">
-        <article>
-            <h2>{{ page.title }}</h2>
-            <small class="articles-list__date">
-                {{ page.date | date: "%-d %b %Y" }}
-            </small>
-            {{ content }}
-        </article>
-    </section>
-</main>
-{% include footer.html %}
+<div class="container">
+  {% include header.html %}
+  <div class="main">
+    <h1>{{ page.title }}</h1>
+    <small class="articles-list__date">
+      {{ page.date | date: "%-d %b %Y" }}
+    </small>
+    {{ content }}
+  </div>
+  <div class="articles-issue">
+    <a href="https://github.com/coskuntekin/coskuntekin.github.com/issues/new" target="_blank">
+      If you have any question, you can open issue about this article.
+    </a>
+  </div>
+  {% include footer.html %}
+</div>
