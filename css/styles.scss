@@ -93,7 +93,7 @@ a{
   padding: 30px;
 }
 
-.header{
+.page-header{
   &::after{
     content: "";
     display: block;
@@ -112,7 +112,7 @@ a{
 
 /*ul*/.nav{
   padding-left: 0;
-  list-style: none;
+  margin-top: 30px;
   & > li {
     display: inline-block;
     &:not(:last-child){
@@ -187,107 +187,8 @@ code{
   color: #c7254e;
   background-color: #f9f2f4;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 13px;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-}
-
-@-moz-keyframes breath {
-  0% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-  20% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  40% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-  60% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  80% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-  100% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-
-@-webkit-keyframes breath {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  20% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  40% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  60% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  80% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-
-@keyframes breath {
-  0% {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  20% {
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  40% {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  60% {
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  80% {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  100% {
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-
-.breath {
-  -moz-animation: breath 1800ms ease-in-out 0ms infinite alternate;
-  -webkit-animation: breath 1800ms ease-in-out  0ms infinite alternate;
-  animation: breath 1800ms ease-in-out  0ms infinite alternate;
 }
 
 /* ==========================================================================
@@ -417,7 +318,7 @@ textarea[contenteditable] {
 
 @media (min-width: 544px){
 
-  .header{
+  .page-header{
     text-align: right;
   }
 
@@ -450,4 +351,107 @@ textarea[contenteditable] {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
   /* Style adjustments for viewports that meet the condition */
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@-moz-keyframes breath {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  20% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  40% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  80% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes breath {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes breath {
+  0% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  20% {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  40% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  80% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.breath {
+  -moz-animation: breath 1800ms ease-in-out 0ms infinite alternate;
+  -webkit-animation: breath 1800ms ease-in-out  0ms infinite alternate;
+  animation: breath 1800ms ease-in-out  0ms infinite alternate;
 }
