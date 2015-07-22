@@ -145,6 +145,26 @@ a{
   float: right;
   color: lighten(#222,50%);
 }
+
+.article-issue{
+  display: block;
+  color: #b5a88c;
+  text-align: center;
+  font-size: 12px;
+  & > a {
+    color: inherit;
+  }
+  &::before{
+    display: block;
+    content: "";
+    width: 50%;
+    height: 1px;
+    margin: 30px auto;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+  }
+}
+
 .page-footer{
   color: #b5a88c;
   text-align: center;
@@ -152,7 +172,7 @@ a{
   &::before{
     display: block;
     content: "";
-    width: 50%;
+    width: 80%;
     height: 1px;
     margin: 30px auto;
     background-color: #eee;
@@ -160,6 +180,15 @@ a{
   & > a{
     color: inherit;
   }
+}
+
+code{
+  padding: 2px 4px;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
 
 @-moz-keyframes breath {
@@ -188,6 +217,7 @@ a{
     transform: scale(1.2);
   }
 }
+
 @-webkit-keyframes breath {
   0% {
     -webkit-transform: scale(1);
@@ -214,6 +244,7 @@ a{
     transform: scale(1.2);
   }
 }
+
 @keyframes breath {
   0% {
     -moz-transform: scale(1);
@@ -254,13 +285,9 @@ a{
 }
 
 .breath {
-  -moz-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -moz-animation: breath 4s linear 1s infinite alternate;
-  -webkit-animation: breath 4s linear 1s infinite alternate;
-  animation: breath 4s linear 1s infinite alternate;
+  -moz-animation: breath 1800ms ease-in-out 0ms infinite alternate;
+  -webkit-animation: breath 1800ms ease-in-out  0ms infinite alternate;
+  animation: breath 1800ms ease-in-out  0ms infinite alternate;
 }
 
 /* ==========================================================================
