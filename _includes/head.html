@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="Coskun Tekin" name="author">
-    <meta name="description" content="I write stuff about front-end development">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index,follow">
-    <meta name="revisit-after" content="1 days">
-    <meta name="google-site-verification" content="LSlMyiG3oWcRBeBfWzTlVFUN3GvyL1TawZqQUxHNvc0" />
+  <meta charset="utf-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="Coskun Tekin" name="author">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="revisit-after" content="1 days">
+  <title>
+      {% if page.title == "Home" %}
+          {{ site.title }} {{ site.tagline }}
+      {% else %}
+          {{ page.title }} {{ site.title }}
+      {% endif %}
+  </title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="google-site-verification" content="LSlMyiG3oWcRBeBfWzTlVFUN3GvyL1TawZqQUxHNvc0" />
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link href="{{ site.baseurl }}/images/favicon.ico" rel="icon" type="image/ico" />
 
-    <title>
-        {% if page.title == "Home" %}
-            {{ site.title }} {{ site.tagline }}
-        {% else %}
-            {{ page.title }} {{ site.title }}
-        {% endif %}
-    </title>
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.coskuntekin.com/feeds/feed.xml" />
-
-    <link href="{{ site.baseurl }}/images/favicon.ico" rel="icon" type="image/ico" />
-
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}atom.xml">
-    <link type="text/plain" rel="author" href="http://coskuntekin.github.io/humans.txt" />
-
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link type="text/plain" rel="author" href="http://coskuntekin.github.io/humans.txt" />
 </head>
 <body class="{{ page.page-class }}">

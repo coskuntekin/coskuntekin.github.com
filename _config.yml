@@ -1,32 +1,18 @@
-# Syntax highlighting
-highlighter:         pygments
-
-# Permalinks
+# Welcome to Jekyll!
 #
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Setup
-tagline:             I write about front-end development stuff.
-url:                 http://coskuntekin.github.io
-exclude: ['README.md', 'sass/']
-paginate: 10
-markdown: redcarpet
+# Site settings
+title: coskuntekin › front-end developer
+email: mail@coskuntekin.com
+description: I write stuff about front-end development and about HTML5, CSS3, DOM, jQuery, AngularJS, Middleman, Ruby on Rails
+baseurl: ""
+url: "http://coskuntekin.com"
+twitter_username: coskuntekin
+github_username:  coskuntekin
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _scss
-  style:            :compressed
-  output_style: compact
-  sass_options:
-    unix_newlines: true
-
-#Jekyll Sitemap
-sitemap:
-  lastmod:
-  priority: 0.5
-  changefreq: monthly
-  exclude: 'no'
+# Build settings
+markdown: kramdown

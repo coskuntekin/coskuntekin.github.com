@@ -1,12 +1,12 @@
 /* TEAM */
 
-    Front-End Developer: Coskun Tekin
     Twitter: @coskuntekin
+    Github: https://github.com/coskuntekin
 
 /* THANKS */
 
     Ruby
-    Middleman
+    Jekyll
     HAML
     Sass
     Compass
@@ -18,5 +18,5 @@
 
     Last Update: 2015/07/16
     Standards: Ruby, HTML5, CSS3
-    IDE: RubyMine
+    IDE: Atom
     Platform: Middleman - Ruby

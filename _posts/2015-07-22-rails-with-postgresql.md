@@ -13,7 +13,9 @@ Ruby on Rails uses sqlite3 as default database. But sometimes you need to use ot
 
 First, update apt-get:
 
-`sudo apt-get update`
+{% highlight bash %}
+sudo apt-get update
+{% endhighlight %}
 
 Then install PostgreSQL and its development libraries:
 
@@ -25,39 +27,54 @@ PostgreSQL is now installed but you should create a new database user, that your
 
 Create a PostgreSQL superuser user with this command
 
-`sudo -u postgres createuser -s pguser`
+{% highlight bash %}
+sudo -u postgres createuser -s pguser
+{% endhighlight %}
 
 If you want to set a password for the database user, enter the PostgreSQL console with this command:
 
-`sudo -u postgres psql`
+{% highlight bash %}
+sudo -u postgres psql
+{% endhighlight %}
 
 The PostgreSQL console is indicated by the postgres=# prompt. At the PostgreSQL prompt, enter this command to set the password for the database user that you created:
 
-`postgres=# \password pguser`
+{% highlight bash %}
+postgres=# \password pguser
+{% endhighlight %}
 
 Enter your desired password at the prompt, and confirm it.
 
 Now you may exit the PostgreSQL console by entering this command:
 
-`postgres=# \q`
+{% highlight bash %}
+postgres=# \q
+{% endhighlight %}
 
 #### Configure Database Connection
 
-`vi config/database.yml`
-
+{% highlight bash %}
+vi config/database.yml
+{% endhighlight %}
 
 Under the default section, find the line that says "pool: 5" and add the following lines under it.
 
-`host: localhost`
-`username: pguser`
-`password: pguser_password`
+{% highlight bash %}
+host: localhost
+username: pguser
+password: pguser_password
+{% endhighlight %}
 
 Save and exit.
 
 #### Create Application Databases
 
-`rake db:create`
+{% highlight bash %}
+rake db:create
+{% endhighlight %}
 
 #### Run Server
 
-`rails server` or `rails s`
+{% highlight bash %}
+rails server
+{% endhighlight %}

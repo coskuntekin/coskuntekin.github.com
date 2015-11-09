@@ -1,9 +1,11 @@
 ---
-# Front matter comment to ensure Jekyll properly reads file.
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
+@charset "utf-8";
 
-@import "../_scss/normalize";
-
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "normalize";
+@import "syntax-highlighting";
 /*
  * HTML5 Boilerplate
  *
@@ -26,7 +28,7 @@ textarea {
 
 body {
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.4;
   color: #757575;
 }
@@ -88,7 +90,7 @@ a{
 }
 
 .container{
-  max-width: 700px;
+  max-width: 780px;
   margin: 20px auto;
   padding: 30px;
 }
@@ -107,6 +109,7 @@ a{
 .page-title{
   & > a{
     color: #474747;
+    font-weight: 500;
   }
 }
 
@@ -180,15 +183,6 @@ a{
   & > a{
     color: inherit;
   }
-}
-
-code{
-  padding: 2px 4px;
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 4px;
-  font-size: 13px;
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
 
 /* ==========================================================================
