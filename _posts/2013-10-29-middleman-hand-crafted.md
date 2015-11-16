@@ -1,10 +1,6 @@
 ---
 title: 'Middleman &#8211; Hand-crafted frontend development'
-author: coskun tekin
 layout: post
-permalink: /middleman-hand-crafted/
-categories:
-  - Genel
 tags:
   - Middleman
   - Middleman Install

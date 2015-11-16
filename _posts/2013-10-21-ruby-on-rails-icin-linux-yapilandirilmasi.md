@@ -1,10 +1,6 @@
 ---
 title: Ruby on Rails İçin Linux Yapılandırılması
-author: coskun tekin
 layout: post
-permalink: /ruby-on-rails-icin-linux-yapilandirilmasi/
-categories:
-  - Genel
 tags:
   - Linux
   - Ruby on Rails

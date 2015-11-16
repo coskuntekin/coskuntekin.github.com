@@ -1,10 +1,6 @@
 ---
 title: 'Internet Explorer &#8216;da Debug Yapmak'
-author: coskun tekin
 layout: post
-permalink: /internet-explorer-da-debug-yapmak/
-categories:
-  - Genel
 tags:
   - Debug
   - DevTools

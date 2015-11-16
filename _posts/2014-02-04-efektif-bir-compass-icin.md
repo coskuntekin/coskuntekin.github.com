@@ -1,10 +1,6 @@
 ---
 title: Efektif Bir Compass İçin
-author: coskun tekin
 layout: post
-permalink: /efektif-bir-compass-icin/
-categories:
-  - Genel
 tags:
   - Compass
   - Compass Recipes

@@ -1,10 +1,6 @@
 ---
 title: Middleman Helpers
-author: coskun tekin
 layout: post
-permalink: /middleman-helpers/
-categories:
-  - Genel
 tags:
   - Middleman
   - Middleman Helpers

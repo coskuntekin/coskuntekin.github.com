@@ -1,10 +1,6 @@
 ---
 title: 'Sass Cache Path Konfigurasyonu'
-author: coskun tekin
 layout: post
-permalink: /sass_cache_path-konfigurasyonu/
-categories:
-  - Genel
 tags:
   - Middleman
   - Middleman config.rb

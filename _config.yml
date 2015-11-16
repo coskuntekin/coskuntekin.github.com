@@ -8,11 +8,14 @@
 # Site settings
 title: coskuntekin › front-end developer
 email: mail@coskuntekin.com
-description: I write stuff about front-end development and about HTML5, CSS3, DOM, jQuery, AngularJS, Middleman, Ruby on Rails
+description: I write stuff about HTML5, CSS3, DOM, jQuery, AngularJS, Middleman, Ruby on Rails, focused on front-end development
 baseurl: ""
-url: "http://coskuntekin.com"
+url: "https://coskuntekin.github.io"
 twitter_username: coskuntekin
 github_username:  coskuntekin
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+sass:
+  style: :compressed

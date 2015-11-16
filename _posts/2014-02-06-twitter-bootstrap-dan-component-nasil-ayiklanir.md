@@ -1,10 +1,6 @@
 ---
 title: 'Twitter Bootstrap&#8217; dan Component&#8217;ler Nasıl Ayıklanır?'
-author: coskun tekin
 layout: post
-permalink: /twitter-bootstrap-dan-component-nasil-ayiklanir/
-categories:
-  - Genel
 tags:
   - Twitter Bootstrap
 ---

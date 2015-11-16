@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Rails with PostgreSQL"
-date:   2015-07-22 10:39
 published: true
 ---
 

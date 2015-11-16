@@ -84,8 +84,12 @@ a{
   -moz-transition: color, 1s, linear, 0.28s;
   -webkit-transition: color, 1s, linear, 0.28s;
   transition: color, 1s, linear, 0.28s;
+  &:focus,
   &:hover{
     color: #b5a88c;
+  }
+  &:visited{
+    color: #bbb;
   }
 }
 

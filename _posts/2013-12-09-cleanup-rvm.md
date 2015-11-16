@@ -1,10 +1,6 @@
 ---
 title: Cleanup RVM
-author: coskun tekin
 layout: post
-permalink: /cleanup-rvm/
-categories:
-  - Genel
 tags:
   - RVM
   - RVM cleanup

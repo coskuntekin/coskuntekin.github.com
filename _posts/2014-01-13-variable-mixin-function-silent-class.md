@@ -1,10 +1,6 @@
 ---
 title: Variable, Mixin, Function, Silent Class
-author: coskun tekin
 layout: post
-permalink: /variable-mixin-function-silent-class/
-categories:
-  - Genel
 tags:
   - Sass
 ---
@@ -34,7 +30,7 @@ Birden fazla property i tek bir baslık altında toplamada, ustaca kullanılabil
   -webkit-border-radius: $radius
   -moz-border-radius: $radius
   border-radius: $radius
-  
+
 +rounded
 {% endhighlight %}
 

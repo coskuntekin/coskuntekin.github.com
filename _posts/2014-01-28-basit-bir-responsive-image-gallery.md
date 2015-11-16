@@ -1,10 +1,6 @@
 ---
 title: Basit Bir Responsive Image Gallery
-author: coskun tekin
 layout: post
-permalink: /basit-bir-responsive-image-gallery/
-categories:
-  - Genel
 tags:
   - Bootstrap Snippet
   - Twitter Bootstrap

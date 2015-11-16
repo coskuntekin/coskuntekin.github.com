@@ -1,10 +1,6 @@
 ---
 title: Modal with jQuery Cookie
-author: coskun tekin
 layout: post
-permalink: /modal-with-jquery-cookie/
-categories:
-  - Jumbotron
 tags:
   - Bootstrap Snippet
   - Twitter Bootstrap

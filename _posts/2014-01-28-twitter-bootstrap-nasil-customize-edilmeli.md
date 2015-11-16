@@ -1,10 +1,6 @@
 ---
 title: Twitter Bootstrap Customize Yöntemleri
-author: coskun tekin
 layout: post
-permalink: /twitter-bootstrap-nasil-customize-edilmeli/
-categories:
-  - Genel
 tags:
   - Twitter Bootstrap
 ---

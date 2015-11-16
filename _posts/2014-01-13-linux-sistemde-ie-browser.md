@@ -1,10 +1,6 @@
 ---
 title: Linux Sistemde IE Browser
-author: coskun tekin
 layout: post
-permalink: /linux-sistemde-ie-browser/
-categories:
-  - Genel
 tags:
   - Linux
 ---

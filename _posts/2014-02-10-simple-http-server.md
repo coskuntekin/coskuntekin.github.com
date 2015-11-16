@@ -1,10 +1,6 @@
 ---
 title: Simple HTTP Server
-author: coskun tekin
 layout: post
-permalink: /simple-http-server/
-categories:
-  - Genel
 tags:
   - Linux
   - Simple HTTP Server

@@ -1,10 +1,6 @@
 ---
 title: Middleman Deploy
-author: coskun tekin
 layout: post
-permalink: /middleman-deploy/
-categories:
-  - Genel
 tags:
   - Middleman
   - Middleman Deploy

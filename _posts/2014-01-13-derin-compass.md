@@ -1,10 +1,6 @@
 ---
 title: 'Derin Compass'
-author: coskun tekin
 layout: post
-permalink: /derin-compass/
-categories:
-  - Genel
 tags:
   - Compass
 ---
