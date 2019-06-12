@@ -1,10 +1,9 @@
 ---
 title: Ruby on Rails İçin Linux Yapılandırılması
 layout: post
-tags:
-  - Linux
-  - Ruby on Rails
+tags: [Linux, Ruby on Rails]
 ---
+
 Ruby&#8217;inin en stable calistigi ortam Linux olarak gosterilebilir. Bu bağlamda, Ruby on Rails çalışma ortamı için Linux&#8217; ta izlenmesi gereken adımlar aşağıdaki gibi sıralanabilir.
 
 <!--more-->  

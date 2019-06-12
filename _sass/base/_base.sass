@@ -1,0 +1,52 @@
+//------------------------------------
+// # Base
+//------------------------------------
+
+body
+  margin: 0
+  color: var(--body-color)
+  background-color: var(--body-bg)
+
+a
+  text-decoration: none
+  color: var(--link-color)
+  transition: color 0.2s ease-in
+  &:hover,
+  &:focus
+    color: var(--link-hover-color)
+    transition: color 0.2s ease-out
+
+hr
+  width: 100px
+  height: 1px
+  margin: 2rem auto
+  background-color: var(--hr-color)
+  border: 0      
+
+code,
+pre
+  font-family: "SFMono-Regular", Menlo, Monaco, "Courier New", monospace 
+  
+@media (min-width: 42em) and (min-height: 27em)
+  code
+    word-break: break-word
+
+kbd
+  display: inline-block
+  padding: 3px
+  font-family: var(--font-secondary)
+  font-size: 13px
+  font-weight: bold
+  color: var(--kbd-color)
+  text-transform: uppercase
+  background-color: var(--kbd-bg)
+  border-radius: 3px
+
+blockquote
+  padding: 0 0 0 1.5rem
+  margin: 0 2rem 1rem -2rem
+  color: #999
+  border-left: 0.5rem solid var(--blockquote-border)
+
+blockquote p:last-child
+  margin-bottom: 0

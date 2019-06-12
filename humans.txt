@@ -2,21 +2,25 @@
 
     Twitter: @coskuntekin
     Github: https://github.com/coskuntekin
+    Web: coskuntekin.com
 
 /* THANKS */
 
     Ruby
     Jekyll
+    Middleman
     HAML
     Sass
-    Compass
-    Modernizr
-    jQuery
+    ~~Compass~~
+    ~~Modernizr~~
+    ~~jQuery~~
     GIT
+    EcmaScript 6
+    Web API 
 
 /* SITE */
 
-    Last Update: 2015/07/16
+    Last Update: 2019/06/12
     Standards: Ruby, HTML5, CSS3
-    IDE: Atom
-    Platform: Middleman - Ruby
+    IDE: VS Code
+    Platform: Middleman - Jekyll - Ruby

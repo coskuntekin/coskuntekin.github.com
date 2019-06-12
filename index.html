@@ -1,19 +1,45 @@
 ---
 layout: default
-page-class: home
+classes: home
 ---
 
-<div class="main">
-  <div class="article-list">
-    {% for post in site.posts %}
-      <div class="article-list__item">
-        <a class="article-list__link" href="{{ post.url }}">
+<section aria-label='Content layout'>
+  {% for post in site.posts limit:1 %}
+  <article aria-label='Summary article' class='font-playfair'>
+    <h1 class='jumbutron-title font-oswald'>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    <small>
+      {{ post.date | date_to_string }}
+    </small>
+    <p>
+      {{ post.excerpt }}
+    </p>
+  </article>
+  {% endfor %}
+  <article aria-label='Article list'>
+    <ul class='list-unstyled'>
+      {% for post in site.posts offset:1 limit:5 %}
+      <li>
+        <a href="{{ post.url }}" class="article-link font-oswald">
           {{ post.title }}
-          <small class="article-list__date">
-            {{ post.date | date_to_string }}
-          </small>
         </a>
-      </div>
-    {% endfor %}
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+  <article aria-label='More article button'>
+    <a href="{{ site.baseurl }}/categories" class="btn font-oswald">More ↬</a>
+  </article>
+</section>
+<section aria-label='Image layout' class='image-layout'>
+  <div class='image-left'>
+    <img src="{{ site.baseurl }}/images/DSC00869.JPG" class="img-responsive radius" alt="Japan Temple" />
+    <img src="{{ site.baseurl }}/images/DSC00716.JPG" class="img-responsive radius" alt="Hong Kong Wall Paint" />
   </div>
-</div>
+  <div class='image-right'>
+    <img src="{{ site.baseurl }}/images/DSC07866.JPG" class="img-responsive radius" alt="Japan Universal" />
+  </div>
+</section>
