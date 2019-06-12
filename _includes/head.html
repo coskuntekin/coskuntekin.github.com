@@ -12,12 +12,13 @@
   {% if page.tags %}
     <meta name="keywords" content="{{ page.tags|join: ',' }}" />
   {% endif %}
+  <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+  
   <meta name="author" content="coskuntekin">
   <meta name="google-site-verification" content="LSlMyiG3oWcRBeBfWzTlVFUN3GvyL1TawZqQUxHNvc0" />
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href="{{ "/css/application.css" | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display&amp;font-display=swap" rel="stylesheet" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link type="text/plain" rel="author" href="{{ site.baseurl }}/humans.txt" />
@@ -26,6 +27,8 @@
 
   <link href="{{ site.baseurl }}/images/favicon.ico" rel="icon" type="image/ico" />
   <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+  <link href='site.webmanifest' rel='manifest'>
+  <link href='icon.png' rel='apple-touch-icon'>
 
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="article" />

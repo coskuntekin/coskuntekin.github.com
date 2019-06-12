@@ -1,0 +1,24 @@
+---
+layout: page
+classes: categories
+permalink: /categories/
+---
+
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for year in postsByYear %}
+    <h1 class="text-left">
+      {{year.name}}
+    </h1>
+    {% for post in year.items %}
+    <article aria-label='Article list' class='article-list-item radius'>
+      <a href="{{ post.url }}" class="article-link">
+        <h3 class='article-title font-oswald'>
+          {{ post.title }}
+        </h3>
+        <small class='article-date font-playfair'>
+          {{ post.date | date_to_string }}
+        </small>
+      </a>
+    </article>
+  {% endfor %}
+{% endfor %}

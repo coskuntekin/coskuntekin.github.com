@@ -1,0 +1,43 @@
+//------------------------------------
+// #Root Definations
+//------------------------------------
+
+\:root
+  --font-default: "PT Serif", Georgia, "Times New Roman", serif
+  --font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif
+  --body-bg: #fafafa
+  --body-color: #6c757d
+  --link-color: #222
+  --link-color-hover: #000
+  --link-border-color: rgba(0,0,0,.25)
+  --heading-color: #333
+  --article-link-color: antiquewhite
+  --article-link-hover-color: white
+  --hr-color: rgba(0,0,0,.1)
+  --kbd-color: var(--body-color)
+  --kbd-bg: #eee
+  --code-color: rgba(212, 73, 80, 1)
+  --code-snippet-border: rgba(0, 0, 0, .05)
+  --blockquote-border: #e5e5e5
+
+@media (prefers-color-scheme: dark)
+  \:root
+    --body-bg: #212529
+    --body-color: #6c757d
+    --link-color: rgba(255,255,255,.65)
+    --link-color-hover: #fff
+    --link-border-color: rgba(255,255,255,.3)
+    --heading-color: #dee2e6
+    --article-link-color: #2d3031
+    --article-link-hover-color: #44494a
+    --hr-color: rgba(255,255,255,.1)  
+    --code-color: rgba(212, 73, 80, .85)
+    --code-snippet-border: rgba(255, 255, 255, .1)
+    --blockquote-border: rgba(255, 255, 255, .1)      
+
+  img
+    opacity: .75
+    transition: opacity .5s ease-in-out
+    &:hover,
+    &:focus
+      opacity: 1  

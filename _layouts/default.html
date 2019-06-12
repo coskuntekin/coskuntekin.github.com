@@ -3,17 +3,17 @@
 
   {% include head.html %}
 
-  <body {% if page.classes %}class="{{ page.classes }}"{% endif %}>
+  <body {% if page.classes %}class="{{ page.classes }}" {% endif %}>
 
-    <div class="container">
-
-      {% include header.html %}
-
+    {% include header.html %}
+    
+    <main class='main' role='main'>
+    
       {{ content }}
+    
+    </main>
 
-      {% include footer.html %}
-
-    </div>
+    {% include footer.html %}
 
   </body>
 

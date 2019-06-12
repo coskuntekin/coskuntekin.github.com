@@ -1,0 +1,86 @@
+//------------------------------------
+// # Home-Page
+//------------------------------------
+
+.main
+  padding:
+    right: 1rem
+    left: 1rem
+
+.jumbutron-title
+  font-size: 3rem
+  text-transform: uppercase
+  & > a
+    display: block
+    &::after
+      content: ''
+      display: block
+      width: calc(100% - 80%)
+      padding-bottom: 1rem
+      border-bottom: 2px solid var(--link-border-color)
+      transition: width 0.2s linear, color 0.2s ease-out
+    &:hover,
+    &:focus
+      &::after
+        width: calc(100% - 50%)
+        border-bottom-color: var(--link-border-color)
+        transition: width 0.2s linear, color 0.2s ease-in
+
+.btn
+  display: inline-block
+  padding: 0.5rem 2.5rem
+  margin:
+    top: 1rem
+    bottom: 1rem
+  background-color: black
+  color: white
+
+@keyframes flash
+  from,
+  50%,
+  to
+    opacity: 1
+  25%,
+  75%
+    opacity: 0
+
+.home
+  & .article-link
+    &::before
+      content: '▮'
+      padding-right: 0.2rem
+      vertical-align: middle
+    &:focus,
+    &:hover
+      &::before
+        animation-name: flash
+        animation-duration: 1s
+        animation-fill-mode: both
+        animation-iteration-count: infinite
+
+@supports (display: grid)
+  .home
+    & .main
+      display: grid
+  @media (min-width: 42em) and (min-height: 27em)
+    .header
+      grid-template-columns: repeat(2, 1fr)
+      padding: 2rem
+    .main
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 2rem
+      padding:
+        right: 4rem
+        left: 4rem    
+    .navigation
+      text-align: right
+    .image-layout
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 1rem
+    .image-left
+      grid-column: 1
+      align-self: start
+      text-align: right
+    .image-right
+      grid-column: 2

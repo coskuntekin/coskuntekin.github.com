@@ -1,0 +1,39 @@
+//------------------------------------
+// # Categories-Page
+//------------------------------------
+
+.article-title
+  margin:
+    top: 0.5rem
+    bottom: 0.5rem
+  font-weight: 500
+
+.article-list-item
+  display: block
+  margin-bottom: 1rem
+  padding:
+    right: 0.2rem
+    left: 0.2rem
+  background-color: var(--article-link-color)
+  border: 1rem solid transparent
+  transition: background 0.20s ease-in
+  &:hover,
+  &:focus
+    background-color: var(--article-link-hover-color)
+    border-color: var(--article-link-color)
+    transition: background 0.20s ease-out
+
+@supports (display: grid) 
+  .categories
+    & .article-link
+      display: grid
+      grid-template-columns: repeat(2,1fr)   
+    & .article-date
+      justify-self: end
+      align-self: center
+  @media (min-width: 42em) and (min-height: 27em) 
+    .article-list-item
+      margin-bottom: 1.5rem
+      padding:
+        right: 1rem
+        left: 1rem          
