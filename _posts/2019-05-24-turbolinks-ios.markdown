@@ -16,11 +16,14 @@ Repoyu clone'ladıktan sonra [cocoapods][cocoapods] gem'ini yüklemek gerekiyor.
 {% highlight bash %}
   git clone https://github.com/turbolinks/turbolinks-ios.git
   gem install cocoapods
+  
   # Initialize Cocoapods
-  pod init
+  pod init TurbolinksDemo.xcodeproj
+  
   # Add this line in Podfile
   use_frameworks!
   pod 'Turbolinks', :git => 'https://github.com/turbolinks/turbolinks-ios.git'
+  
   # Install Dependencies
   pod install
 {% endhighlight %}
