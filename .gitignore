@@ -13,6 +13,9 @@
 # Ignore Sass cache
 /.sass-cache
 
+# Ignore Jekyll cache
+/.jekyll-cache
+
 # Ignore Compass cache
 /.compass
 
