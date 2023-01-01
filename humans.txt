@@ -9,14 +9,14 @@
     Ruby
     Jekyll
     Middleman
-    HAML
+    ~~HAML~~
     Sass
     ~~Compass~~
     ~~Modernizr~~
     ~~jQuery~~
     GIT
     EcmaScript 6
-    Web API 
+    Web API
 
 /* SITE */
 

@@ -18,7 +18,7 @@ title: coskuntekin @ front-end developer
 email: mail@coskuntekin.com
 description: >- # this means to ignore newlines until "baseurl:"
   I write stuff about HTML5, CSS3, Web API, jQuery, AngularJS, Angular,
-  Vue.js, Middleman, Jekyll. 
+  Vue.js, Middleman, Jekyll.
   Ruby on Rails, focused on front-end development
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://coskuntekin.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -40,9 +40,12 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock
-#   - node_modules
+#   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
