@@ -3,15 +3,11 @@ layout: default
 classes: page
 ---
 
-<section aria-label='Content layout'>
-  <article class='font-playfair' role='article'>
-    <h1 class='text-center font-oswald'>
-      {{page.title}}
-    </h1>
+<section aria-label="Content layout">
+  <article class="font-playfair" role="article">
+    <h1 class="text-center font-oswald">{{page.title}}</h1>
     <div class="text-center mb-1">
-      <small>
-        {{ page.date | date_to_string }}
-      </small>
+      <small> {{ page.date | date_to_string }} </small>
     </div>
     {{ content }}
   </article>
