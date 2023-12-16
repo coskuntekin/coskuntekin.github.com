@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: coskuntekin @ front-end developer
+title: coskuntekin @ frontend developer
 email: mail@coskuntekin.com
 description: >- # this means to ignore newlines until "baseurl:"
   I write stuff about HTML5, CSS3, Web API, jQuery, AngularJS, Angular,
@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://coskuntekin.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: coskuntekin
-github_username:  coskuntekin
+github_username: coskuntekin
 
 # Build settings
 markdown: kramdown
@@ -35,7 +35,6 @@ sass:
 # Plugins
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
