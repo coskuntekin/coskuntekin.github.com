@@ -3,84 +3,64 @@
 //------------------------------------
 
 .main
-  padding:
-    right: 1rem
-    left: 1rem
+  display: grid
+  grid-template-columns: auto auto
+  width: 100%
+  height: 100%
 
-.jumbutron-title
-  font-size: 3rem
-  text-transform: uppercase
-  & > a
-    display: block
-    &::after
-      content: ''
-      display: block
-      width: calc(100% - 80%)
-      padding-bottom: 1rem
-      border-bottom: 2px solid var(--link-border-color)
-      transition: width 0.2s linear, color 0.2s ease-out
-    &:hover,
-    &:focus
-      &::after
-        width: calc(100% - 50%)
-        border-bottom-color: var(--link-border-color)
-        transition: width 0.2s linear, color 0.2s ease-in
+.sidebar
+  display: flex
+  justify-content: center
+  width: auto
+  height: auto
+  padding:
+    top: 2rem
+    right: 2rem
+    left: 2rem
+  border-right-width: 1px
+  border-right-style: solid
+  border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%
+
+.navigation
+  display: flex
+  flex-direction: column
+  row-gap: 0.5rem
+  height: auto
+
+.content
+  display: grid
+  height: 100%
+  grid-template-columns: repeat(8, minmax(0,1fr))
+
+.content-article
+  align-self: flex-end
+  grid-row: 1
+  grid-column: 1 / span 3
+  padding-inline-start: 4rem
+
+.content-article__title
+  display: inline-block
+  background-image: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%)
+  font-size: 8rem
+  line-height: 1
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.content-figure
+  max-width: 100%
+  height: 100vh
+  aspect-ratio: 1 / 1
+  grid-row: 1
+  grid-column: 5 / span 6
+
+.icon
+  width: 1.5rem
+  height: 1.5rem
+  color: white
 
 .btn
   display: inline-block
-  padding: 0.5rem 2.5rem
-  margin:
-    top: 1rem
-    bottom: 1rem
+  border-color: transparent
+  cursor: pointer
   background-color: black
   color: white
-
-@keyframes flash
-  from,
-  50%,
-  to
-    opacity: 1
-  25%,
-  75%
-    opacity: 0
-
-.home
-  & .article-link
-    &::before
-      content: '▮'
-      padding-right: 0.2rem
-      vertical-align: middle
-    &:focus,
-    &:hover
-      &::before
-        animation-name: flash
-        animation-duration: 1s
-        animation-fill-mode: both
-        animation-iteration-count: infinite
-
-@supports (display: grid)
-  .home
-    & .main
-      display: grid
-  @media (min-width: 42em) and (min-height: 27em)
-    .header
-      grid-template-columns: repeat(2, 1fr)
-      padding: 2rem
-    .main
-      grid-template-columns: repeat(2, 1fr)
-      grid-gap: 2rem
-      padding:
-        right: 4rem
-        left: 4rem    
-    .navigation
-      text-align: right
-    .image-layout
-      display: grid
-      grid-template-columns: repeat(2, 1fr)
-      grid-gap: 1rem
-    .image-left
-      grid-column: 1
-      align-self: start
-      text-align: right
-    .image-right
-      grid-column: 2
