@@ -30,7 +30,12 @@ markdown: kramdown
 permalink: pretty
 theme: minima
 sass:
+  quiet_deps: true
+  verbose: false
   style: compressed
+  load_paths:
+    - _sass
+    - node_modules
 
 # Plugins
 plugins:
