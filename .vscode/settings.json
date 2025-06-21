@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.scss": "scss"
+  },
+  "scss.lint.compatibleVendorPrefixes": "warning",
+  "scss.lint.vendorPrefix": "warning",
+  "scss.lint.duplicateProperties": "warning",
+  "scss.validate": false,
+  "css.validate": false,
+  "[scss]": {
+    "editor.suggest.insertMode": "replace"
+  }
+}
