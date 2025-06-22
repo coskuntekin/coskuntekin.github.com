@@ -2,11 +2,78 @@
 <html lang="{% if page.lang %}{{ page.lang|downcase }}{% else %}en{% endif %}">
   {% include head.html %}
   <body {% if page.classes %}class="{{ page.classes }}" {% endif %}>
-    <main class="main-grid">
-      <div>
-        <h1>COSKUNTEKIN</h1>
-        <p>Designer & Developer</p>
+    <header class="header" role="banner" aria-label="Site header">
+      <div class="header__branding" aria-labelledby="site-title">
+        <h1 id="site-title" class="header__title">coskuntekin.</h1>
+        <p class="header__subtitle" aria-label="Role description">
+          Designer & Developer
+        </p>
       </div>
+      <div class="header__social">
+        <ul
+          class="header__social-list"
+          role="list"
+          aria-label="Social media links"
+        >
+          <li class="header__social-item">
+            <a href="#" aria-label="Facebook profile">fb</a>
+          </li>
+          <li class="header__social-item">
+            <a href="#" aria-label="LinkedIn profile">ln</a>
+          </li>
+          <li class="header__social-item">
+            <a href="#" aria-label="Twitter profile">tw</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__nav">
+        <nav aria-label="Main navigation">
+          <ul
+            class="header__nav-list"
+            role="list"
+            aria-label="Primary navigation"
+          >
+            <li class="header__nav-item">
+              <a href="#" aria-label="View last works">last works</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" aria-label="Read blog posts">blog</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" aria-label="Schedule a call">schedule calls</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main" role="main" aria-label="Main content">
+      <section class="main__section" aria-labelledby="section-title">
+        <div
+          class="main__section-image"
+          role="img"
+          aria-label="Decorative image"
+        >
+          image
+        </div>
+      </section>
+      <footer
+        class="main__footer"
+        role="contentinfo"
+        aria-label="Footer navigation"
+      >
+        <ul class="main__footer-list" role="list" aria-label="Footer links">
+          <li class="main__footer-item">
+            <a href="#" aria-label="Download curriculum vitae">download cv</a>
+          </li>
+          <li class="main__footer-item">
+            <a href="#" aria-label="View latest works">latest works</a>
+          </li>
+          <li class="main__footer-item">
+            <a href="#" aria-label="View case studies">case studies</a>
+          </li>
+        </ul>
+      </footer>
     </main>
   </body>
 </html>
