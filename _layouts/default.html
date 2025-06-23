@@ -29,15 +29,15 @@
             aria-label="Primary navigation"
           >
             <li class="header__nav-item">
-              <a href="#" aria-label="View last works" aria-current="page"
-                >last works</a
+              <a href="{{ site.baseurl }}/" aria-label="View latest posts" aria-current="page"
+                >latest posts</a
               >
             </li>
             <li class="header__nav-item">
-              <a href="#" aria-label="Read blog posts">blog</a>
+              <a href="{{ site.baseurl }}/categories" aria-label="Read blog posts">blog</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" aria-label="Schedule a call">schedule calls</a>
+              <a href="{{ site.baseurl }}/about" aria-label="Learn more about me">about</a>
             </li>
           </ul>
         </nav>
@@ -67,16 +67,16 @@
             >
               <li class="header__social-item">
                 <a
-                  href="#"
-                  aria-label="Tumblr profile"
+                  href="https://github.com/{{ site.github_username }}"
+                  aria-label="GitHub profile"
                   rel="external noopener"
                   target="_blank"
-                  >tb</a
+                  >gh</a
                 >
               </li>
               <li class="header__social-item">
                 <a
-                  href="#"
+                  href="https://linkedin.com/in/{{ site.github_username }}"
                   aria-label="LinkedIn profile"
                   rel="external noopener"
                   target="_blank"
@@ -85,7 +85,7 @@
               </li>
               <li class="header__social-item">
                 <a
-                  href="#"
+                  href="https://twitter.com/{{ site.twitter_username }}"
                   aria-label="Twitter profile"
                   rel="external noopener"
                   target="_blank"
@@ -104,7 +104,7 @@
             Himself he evident oh greatly my on inhabit general concern.
           </p>
           <a
-            href="#"
+            href="{{ site.baseurl }}/about"
             class="main__section-link"
             aria-label="Learn more about my work and services"
             aria-describedby="main-section-text"
@@ -121,17 +121,17 @@
       >
         <ul class="main__footer-list" role="list" aria-label="Footer links">
           <li class="main__footer-item">
-            <a href="#" aria-label="Download curriculum vitae PDF" download
-              >download cv</a
+            <a href="{{ site.baseurl }}/about" aria-label="Learn more about me"
+              >about me</a
             >
           </li>
           <li class="main__footer-item">
-            <a href="#" aria-label="View latest works portfolio"
-              >latest works</a
+            <a href="{{ site.baseurl }}/categories" aria-label="View all blog posts"
+              >all posts</a
             >
           </li>
           <li class="main__footer-item">
-            <a href="#" aria-label="View detailed case studies">case studies</a>
+            <a href="mailto:{{ site.email }}" aria-label="Contact via email">contact</a>
           </li>
         </ul>
       </footer>
