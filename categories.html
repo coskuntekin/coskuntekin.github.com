@@ -4,16 +4,24 @@ classes: categories
 permalink: /categories/
 ---
 
-{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date:
-'%Y'" %} {% for year in postsByYear %}
-<h1 class="text-left">{{year.name}}</h1>
-{% for post in year.items %}
-<article aria-label="Article list" class="article-list-item radius">
-  <a href="{{ post.url }}" class="article-link">
-    <h3 class="article-title font-oswald">{{ post.title }}</h3>
-    <small class="article-date font-playfair">
-      {{ post.date | date_to_string }}
-    </small>
-  </a>
-</article>
-{% endfor %} {% endfor %}
+<div class="categories-container">
+  <h1 class="categories-title">Categories</h1>
+  <div class="categories-list">
+    {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+    {% for year in postsByYear %}
+      <div class="category-year">
+        <h2 class="year-title">{{ year.name }}</h2>
+        <ul class="post-list">
+          {% for post in year.items %}
+            <li class="post-item">
+              <a href="{{ post.url }}" class="post-link">
+                <span class="post-title">{{ post.title }}</span>
+                <span class="post-date">{{ post.date | date_to_string }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>
