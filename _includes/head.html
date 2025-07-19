@@ -3,16 +3,15 @@
 >
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
   <link rel="dns-prefetch" href="//www.google-analytics.com" />
   <meta name="robots" content="index,follow" />
-  <meta name="revisit-after" content="1 days" />
-  <meta name="yandex-verification" content="f63058b82421c77a" />
-
   <title>
     {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
   </title>
-
   <meta
     name="description"
     content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
@@ -20,65 +19,98 @@
   {% if page.tags %}
   <meta name="keywords" content="{{ page.tags|join: ',' }}" />
   {% endif %}
-  <meta
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    name="viewport"
-  />
-
-  <meta name="author" content="coskuntekin" />
+  <meta name="author" content="{{ site.author }}" />
   <meta
     name="google-site-verification"
     content="LSlMyiG3oWcRBeBfWzTlVFUN3GvyL1TawZqQUxHNvc0"
   />
-
-  <link href="{{ "/assets/main.css" | relative_url }}"
-  rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display&amp;font-display=swap"
-    rel="stylesheet"
-  />
-
   <link
     rel="canonical"
     href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
   />
-  <link type="text/plain" rel="author" href="{{ site.baseurl }}/humans.txt" />
-
-  {% feed_meta %}
-
   <link
-    href="{{ site.baseurl }}/images/favicon.ico"
+    href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display&amp;font-display=swap"
+    rel="stylesheet"
+  />
+  <link href="{{ "/assets/main.css" | relative_url }}"
+  rel="stylesheet">
+  <link type="text/plain" rel="author" href="{{ site.baseurl }}/humans.txt" />
+  {% feed_meta %}
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+  <link
     rel="icon"
-    type="image/ico"
+    type="image/png"
+    href="/favicon-32x32.png"
+    sizes="32x32"
   />
-  <!--[if IE]><link rel="shortcut icon" href="/favicon.ico" /><![endif]-->
-  <link href="site.webmanifest" rel="manifest" />
-  <link href="icon.png" rel="apple-touch-icon" />
-
-  <meta
-    property="og:title"
-    content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+  <link
+    rel="icon"
+    type="image/png"
+    href="/favicon-16x16.png"
+    sizes="16x16"
   />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:locale" content="en_US" />
+  {% if page.title %}
   <meta property="og:type" content="article" />
-  <meta
-    property="og:url"
-    content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
-  />
+  <meta property="og:title" content="{{ page.title }}" />
+  {% else %}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ site.title }}" />
+  {% endif %}
   <meta
     property="og:description"
     content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
   />
-  <meta property="og:site_name" content="https://coskuntekin.github.io" />
-
+  <meta
+    property="og:url"
+    content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+  />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta
+    property="og:image"
+    content="{% if page.image %}{{ page.image }}{% else %}{{ site.url }}/images/DSC00869.JPG{% endif %}"
+  />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@coskuntekin" />
-  <meta
-    name="twitter:title"
-    content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
-  />
-  <meta
-    name="twitter:description"
-    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-  />
-  <meta name="twitter:creator" content="@coskuntekin" />
+  <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}"
+    }
+  </script>
+  {% if page.title %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ page.title }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.author }}"
+      },
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+      "image": "{{ site.url }}/images/DSC00869.JPG",
+      "url": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.title }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/images/DSC00869.JPG"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+      }
+    }
+  </script>
+  {% endif %}
 </head>
+
