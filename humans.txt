@@ -20,7 +20,7 @@
 
 /* SITE */
 
-    Last Update: 2019/06/12
+    Last Update: 2025/07/05
     Standards: Ruby, HTML5, CSS3
-    IDE: VS Code
+    IDE: ~~VS Code~~ Zed
     Platform: Middleman - Jekyll - Ruby
