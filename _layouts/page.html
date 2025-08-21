@@ -3,9 +3,6 @@ layout: default
 classes: page
 ---
 
-<section aria-label="Content layout">
-  <article class="font-playfair" role="article">
-    <h1 class="text-center font-oswald">{{page.title}}</h1>
-    {{ content }}
-  </article>
-</section>
+{% include header.html %}
+<section class="page-container">{{ content }}</section>
+{% include footer.html %}
