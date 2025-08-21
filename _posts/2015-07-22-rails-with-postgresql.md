@@ -2,6 +2,7 @@
 layout: post
 title:  "Rails with PostgreSQL"
 published: true
+categories: [rails]
 ---
 
 Ruby on Rails uses sqlite3 as default database. But sometimes you need to use other database such as PostgreSQL.
