@@ -27,7 +27,8 @@ github_username: coskuntekin
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:categories/:title/
+# collections_dir: _posts  # Removed - this prevents posts from being processed correctly
 theme: minima
 sass:
   quiet_deps: true
@@ -40,6 +41,12 @@ sass:
 # Plugins
 plugins:
   - jekyll-feed
+  # - jekyll-archives
+# jekyll-archives:
+#   enabled: ["categories"]
+#   layout: categories
+#   permalink: /:name/
+#   categories: ["rails", "css"]
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
