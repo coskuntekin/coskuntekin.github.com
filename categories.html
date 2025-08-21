@@ -4,24 +4,24 @@ classes: categories
 permalink: /categories/
 ---
 
-<div class="categories-container">
-  <h1 class="categories-title">Categories</h1>
-  <div class="categories-list">
-    {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
-    {% for year in postsByYear %}
-      <div class="category-year">
-        <h2 class="year-title">{{ year.name }}</h2>
-        <ul class="post-list">
-          {% for post in year.items %}
-            <li class="post-item">
-              <a href="{{ post.url }}" class="post-link">
-                <span class="post-title">{{ post.title }}</span>
-                <span class="post-date">{{ post.date | date_to_string }}</span>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
-  </div>
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date:
+'%Y'" %} {% for year in postsByYear %}
+<div class="categories-year">
+  <h1 class="categories-year__title text-left">{{year.name}}</h1>
+  {% for post in year.items %}
+  <article
+    aria-label="Article list"
+    class="categories-year__item article-list-item radius"
+  >
+    <a href="{{ post.url }}" class="categories-year__link article-link">
+      <h3 class="categories-year__post-title article-title font-oswald">
+        {{ post.title }}
+      </h3>
+      <small class="categories-year__date article-date font-playfair">
+        {{ post.date | date_to_string }}
+      </small>
+    </a>
+  </article>
+  {% endfor %}
 </div>
+{% endfor %}
