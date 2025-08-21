@@ -3,14 +3,27 @@
 //------------------------------------
 
 \:root
-  --font-default: "PT Serif", Georgia, "Times New Roman", serif
+  --font-default: 'Playfair Display', serif
   --font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif
-  --body-bg: #fafafa
-  --body-color: #6c757d
-  --link-color: #222
-  --link-color-hover: #000
+
+  --palette-green: rgb(149, 241, 133)
+  --palette-yellow: rgb(249, 215, 73)
+  --palette-white: #ffffff
+  --palette-dark-text: #333
+  --palette-light-text: #555
+  --palette-medium-text: #777
+  --palette-light-gray: #f8f9fa
+  --palette-blue: #3498db
+  --palette-blue-dark: #2a7bbd
+  --palette-border-light: #ecf0f1
+  --palette-border-dark: #e5e5e5
+
+  --body-bg: var(--palette-white)
+  --body-color: var(--palette-light-text)
+  --link-color: var(--palette-blue)
+  --link-color-hover: var(--palette-blue-dark)
   --link-border-color: rgba(0,0,0,.25)
-  --heading-color: #333
+  --heading-color: var(--palette-dark-text)
   --article-link-color: antiquewhite
   --article-link-hover-color: white
   --hr-color: rgba(0,0,0,.1)
@@ -18,7 +31,7 @@
   --kbd-bg: #eee
   --code-color: rgba(212, 73, 80, 1)
   --code-snippet-border: rgba(0, 0, 0, .05)
-  --blockquote-border: #e5e5e5
+  --blockquote-border: var(--palette-border-dark)
 
 @media (prefers-color-scheme: dark)
   \:root
