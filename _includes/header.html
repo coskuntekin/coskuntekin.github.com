@@ -1,36 +1,34 @@
-<header class="header" role="header">
-  <h4>
-    <a href="/" class="font-oswald">COSKUNTEKIN &middot;</a>
-  </h4>
-  <nav class="navigation" role="navigation">
-    <ul class="list-unstyled list-inline">
-      <li>
-        <a href="{{ site.baseurl }}/about" class="font-oswald">about</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/coskuntekin"
-          target="_blank"
-          class="font-oswald"
-          >github</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/coskuntekin"
-          target="_blank"
-          class="font-oswald"
-          >twitter</a
-        >
-      </li>
-      <li>
-        <a
-          href="http://coskuntekin.tumblr.com"
-          target="_blank"
-          class="font-oswald"
-          >tumblr</a
-        >
-      </li>
-    </ul>
-  </nav>
+<header class="header" role="banner" aria-label="Site header">
+  <div
+    class="header__branding"
+    aria-labelledby="site-title"
+    aria-describedby="site-subtitle"
+  >
+    <a href="{{ site.baseurl }}/" aria-label="Go to home page">
+      <h1 id="site-title" class="header__title">coskuntekin.</h1>
+    </a>
+    <p
+      id="site-subtitle"
+      class="header__subtitle"
+      aria-label="Role description"
+    >
+      Designer & Developer
+    </p>
+  </div>
+  <div class="header__nav" role="navigation" aria-labelledby="nav-heading">
+    <nav aria-label="Main navigation">
+      <ul class="header__nav-list" role="list" aria-label="Primary navigation">
+        <li class="header__nav-item">
+          <a href="{{ site.baseurl }}/categories" aria-label="Read blog posts"
+            >blog</a
+          >
+        </li>
+        <li class="header__nav-item">
+          <a href="{{ site.baseurl }}/about" aria-label="Learn more about me"
+            >about</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
