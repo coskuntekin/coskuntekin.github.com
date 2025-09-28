@@ -1,0 +1,62 @@
+//------------------------------------
+// #Root Definations
+//------------------------------------
+
+:root {
+  --font-default: 'Playfair Display', serif;
+  --font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+
+  --palette-green: rgb(149, 241, 133);
+  --palette-yellow: rgb(249, 215, 73);
+  --palette-white: #ffffff;
+  --palette-dark-text: #333;
+  --palette-light-text: #555;
+  --palette-medium-text: #777;
+  --palette-light-gray: #f8f9fa;
+  --palette-blue: #3498db;
+  --palette-blue-dark: #2a7bbd;
+  --palette-border-light: #ecf0f1;
+  --palette-border-dark: #e5e5e5;
+
+  --body-bg: var(--palette-white);
+  --body-color: var(--palette-light-text);
+  --link-color: var(--palette-blue);
+  --link-color-hover: var(--palette-blue-dark);
+  --link-border-color: rgba(0,0,0,.25);
+  --heading-color: var(--palette-dark-text);
+  --article-link-color: antiquewhite;
+  --article-link-hover-color: white;
+  --hr-color: rgba(0,0,0,.1);
+  --kbd-color: var(--body-color);
+  --kbd-bg: #eee;
+  --code-color: rgba(212, 73, 80, 1);
+  --code-snippet-border: rgba(0, 0, 0, .05);
+  --blockquote-border: var(--palette-border-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #121212;
+    --body-color: #6c757d;
+    --link-color: rgba(255,255,255,.65);
+    --link-color-hover: #fff;
+    --link-border-color: rgba(255,255,255,.3);
+    --heading-color: #dee2e6;
+    --article-link-color: #2d3031;
+    --article-link-hover-color: #44494a;
+    --hr-color: rgba(255,255,255,.1);
+    --code-color: rgba(212, 73, 80, .85);
+    --code-snippet-border: rgba(255, 255, 255, .1);
+    --blockquote-border: rgba(255, 255, 255, .1);
+  }
+
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+// ------------------------------------
+// # Page Layout
+// ------------------------------------
+
+.page-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.categories-year__link {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--palette-light-border);
+}
+
+.categories-year {
+  width: 100%;
+}
+
+.page-article {
+  background-color: var(--palette-white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  font-size: 2.5em;
+  color: var(--palette-dark-text);
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.page-content {
+  line-height: 1.6;
+  color: var(--palette-light-text);
+  font-family: "Playfair Display", serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--palette-dark-text);
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 1em;
+    margin-left: 20px;
+  }
+
+  a {
+    color: var(--palette-blue);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+  }
+}
