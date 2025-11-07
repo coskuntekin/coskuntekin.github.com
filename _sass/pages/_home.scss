@@ -26,12 +26,19 @@ a {
 
 .header {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-inline: 2.5rem;
+  padding-inline: 2rem;
   padding-block: 1rem;
   box-sizing: border-box;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .header__title {
@@ -119,6 +126,7 @@ a {
   grid-column: 3;
   align-self: center;
   box-sizing: border-box;
+  padding-inline-end: 1rem;
 }
 
 .main__section-title {
@@ -128,12 +136,12 @@ a {
 }
 
 .main__section-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .main__section-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
