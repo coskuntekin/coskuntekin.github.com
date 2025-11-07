@@ -1,37 +1,43 @@
 <header class="header" role="banner" aria-label="Site header">
-  <div
-    class="header__branding"
-    aria-labelledby="site-title"
-    aria-describedby="site-subtitle"
-  >
-    <a href="{{ site.baseurl }}/" aria-label="Go to home page">
-      <h1 id="site-title" class="header__title">coskuntekin.</h1>
-    </a>
-    <p
-      id="site-subtitle"
-      class="header__subtitle"
-      aria-label="Role description"
+  <div class="header__container">
+    <div
+      class="header__branding"
+      aria-labelledby="site-title"
+      aria-describedby="site-subtitle"
     >
-      Designer & Developer
-    </p>
-  </div>
-  <div class="header__nav" role="navigation" aria-labelledby="nav-heading">
-    <nav aria-label="Main navigation">
-      <ul class="header__nav-list" role="list" aria-label="Primary navigation">
-        <li class="header__nav-item">
-          <a href="{{ site.baseurl }}/categories" aria-label="Read blog posts"
-            >blog</a
-          >
-        </li>
-        <li class="header__nav-item">
-          <a href="{{ site.baseurl }}/about" aria-label="Learn more about me"
-            >about</a
-          >
-        </li>
-        <li class="main__footer-item">
-          <a href="" aria-label="Download my CV">download cv</a>
-        </li>
-      </ul>
-    </nav>
+      <a href="{{ site.baseurl }}/" aria-label="Go to home page">
+        <h1 id="site-title" class="header__title">coskuntekin.</h1>
+      </a>
+      <p
+        id="site-subtitle"
+        class="header__subtitle"
+        aria-label="Role description"
+      >
+        Software Engineer &amp; Tech Blogger
+      </p>
+    </div>
+    <div class="header__nav" role="navigation" aria-labelledby="nav-heading">
+      <nav aria-label="Main navigation">
+        <ul
+          class="header__nav-list"
+          role="list"
+          aria-label="Primary navigation"
+        >
+          <li class="header__nav-item">
+            <a href="{{ site.baseurl }}/categories" aria-label="Read blog posts"
+              >blog</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="{{ site.baseurl }}/about" aria-label="Learn more about me"
+              >about</a
+            >
+          </li>
+          <li class="main__footer-item">
+            <a href="" aria-label="Download my CV">download cv</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
