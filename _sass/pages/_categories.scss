@@ -1,0 +1,30 @@
+.categories-year {
+  max-width: 800px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.categories-year__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.categories-year {
+  width: 100%;
+}
+
+.categories-year__item {
+  display: flex;
+}
+
+.categories-year__post-title {
+  margin-bottom: 0;
+}
