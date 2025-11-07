@@ -7,7 +7,7 @@ permalink: /categories/
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date:
 '%Y'" %} {% for year in postsByYear %}
 <div class="categories-year">
-  <h1 class="categories-year__title text-left">{{year.name}}</h1>
+  <h1 class="categories-year__title text-right">{{year.name}}</h1>
   {% for post in year.items %}
   <article
     aria-label="Article list"
