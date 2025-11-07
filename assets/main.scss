@@ -3,8 +3,10 @@
 
 @use "minima";
 @use "base/root";
+@use "layout/footer";
 @use "components/breadcrumbs";
 @use "components/posts";
 @use "pages/home";
+@use "pages/categories";
 @use "pages/single";
 @use "pages/page";
