@@ -4,26 +4,11 @@
 
 .page-container {
   display: flex;
-  max-width: 1200px;
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem;
   box-sizing: border-box;
-}
-
-.categories-year__link {
-  width: 100%;
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--palette-light-border);
-}
-
-.categories-year {
-  width: 100%;
 }
 
 .page-article {
