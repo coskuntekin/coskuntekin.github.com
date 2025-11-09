@@ -2,6 +2,10 @@
 // # Base
 // ------------------------------------
 
+.categories {
+  background-color: var(--palette-light-gray);
+}
+
 a {
   text-decoration: none;
   color: var(--link-color);
