@@ -1,10 +1,9 @@
-#breadcrumbs {
+.breadcrumbs {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   padding: 1rem 20px;
   font-size: 0.9em;
   color: var(--palette-medium-text);
-
   a {
     color: var(--palette-blue);
     text-decoration: none;
