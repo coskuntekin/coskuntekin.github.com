@@ -23,5 +23,23 @@ permalink: /categories/
     </a>
   </article>
   {% endfor %}
+  {% unless forloop.last %}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 800 400"
+    preserveAspectRatio="none"
+    class="categories-year__svg"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path
+      fill="none"
+      stroke="#ccc"
+      stroke-linecap="round"
+      stroke-width="4"
+      d="M25.112 196.413c8.502-.119 47.452-3.023 64.574-.897 17.123 2.125 49.53 17.867 65.47 17.04 15.943-.827 36.004-22.964 55.606-23.318 19.603-.355 73.79 22.399 93.274 20.627 19.484-1.77 26.368-34.553 54.708-34.08 28.341.472 126.411 37.432 160.538 37.668 34.128.236 72.912-37.292 98.655-35.875 25.743 1.418 76.668 44.984 96.861 46.637 20.193 1.653 49.063-29.593 56.502-34.08"
+    />
+  </svg>
+  {% endunless %}
 </div>
 {% endfor %}
