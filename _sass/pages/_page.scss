@@ -15,7 +15,9 @@
   background-color: var(--palette-white);
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-inline: auto;
+  box-sizing: border-box;
 }
 
 .page-title {
